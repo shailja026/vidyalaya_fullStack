@@ -1,0 +1,144 @@
+.mainUi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  width: 50%;
+  margin: auto;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.form {
+  width: 100%;
+  height: auto;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center;
+}
+.form label {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+.form input {
+  width: 80%;
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.fileLabel {
+  width: 80%;
+}
+.file {
+  width: 100%;
+  text-align: center;
+}
+
+.upload {
+  padding: 0.7rem;
+  background-color: #fffbfb;
+  color: black(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+  width: 150px;
+}
+.pdfContainer {
+  padding: 1rem;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+.btn{
+    padding: 0.5rem;
+  border: none;
+  border-radius: 10%;
+background-color: rgb(48, 255, 248);
+box-shadow: #f6cfe866 2px 2px, rgba(233, 248, 248, 0.3) 4px 4px;
+}
+.pdfContainer h5 {
+  font-size: 1rem;
+}
+.document {
+  width: 50%;
+  padding: 1rem;
+  overflow-y: scroll;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.document .pdfLink {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sampleDoc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page {
+  width: 50%;
+
+  object-fit: contain;
+  margin-bottom: 1.5rem !important;
+}
+.outerbox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1;
+  width: 100%;
+}
+.viewPdf {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10%;
+  background-color: rgb(82, 245, 82);
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  box-shadow: rgb(82, 245, 82, 0.5) 2px 2px, rgb(82, 245, 82, 0.4) 4px 4px,
+    rgb(82, 245, 82, 0.1) 6px 6px;
+}
+
+/* mobile view================================ */
+@media screen and (max-width: 750px) {
+  body {
+    overflow-x: hidden;
+  }
+  .outerbox {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    gap: 1;
+    width: 100%;
+  }
+
+  .page {
+    object-fit: cover;
+    width: 50%;
+    margin: auto;
+  }
+  .document {
+    width: 100%;
+    margin: auto;
+    overflow-x: hidden;
+  }
+}
